@@ -1,0 +1,11 @@
+<%- include("header.ejs")%> <%- include("nav.ejs") %>
+
+<form id="product-add-form" method="POST" action="/book-added">
+  <input type="text" name="bookName" placeholder="Book Name" />
+  <input type="text" name="bookDesc" placeholder="Book Description" />
+  <input type="text" name="bookPrice" placeholder="Book Price" />
+  <input type="text" name="bookAuthor" placeholder="Book Author" />
+  <button type="submit">Add product</button>
+</form>
+
+<%- include("footer.ejs") %>

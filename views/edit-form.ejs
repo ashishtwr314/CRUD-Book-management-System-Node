@@ -1,0 +1,37 @@
+<%- include("header.ejs")%> <%- include("nav.ejs") %> <% console.log() %>
+
+<form
+  id="product-add-form"
+  method="POST"
+  value="<%= book.book_name%>"
+  action="/edited"
+>
+  <input
+    type="text"
+    name="bookName"
+    placeholder="Book Name"
+    value="<%= book[0].book_name %>"
+  />
+  <input
+    type="text"
+    name="bookDesc"
+    placeholder="Book Description"
+    value="<%= book[0].book_description %>"
+  />
+  <input
+    type="text"
+    name="bookPrice"
+    placeholder="Book Price"
+    value="<%= book[0].book_price %>"
+  />
+  <input
+    type="text"
+    name="bookAuthor"
+    placeholder="Book Author"
+    value="<%= book[0].book_author %>"
+  />
+  <input type="hidden" name="bookId" value="<%= book[0].book_id %>" />
+  <button type="submit">Save this Edit</button>
+</form>
+
+<%- include("footer.ejs") %>

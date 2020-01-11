@@ -1,0 +1,17 @@
+<%- include("header.ejs")%> <%- include("nav.ejs") %>
+
+<div class="book-detailsPage">
+  <% console.log(book) %>
+  <div class="book-name"><%= book.book_name %></div>
+  <div class="book-desc">
+    <p>
+      <%= book.book_description %>
+    </p>
+    <div class="book-author">- <%= book.book_author %></div>
+  </div>
+
+  <div class="book-price"><%= book.book_price %></div>
+
+  <button class="addtocartbtn">Add to Cart</button>
+</div>
+<%- include("footer.ejs") %>

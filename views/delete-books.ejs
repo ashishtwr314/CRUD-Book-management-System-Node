@@ -1,0 +1,26 @@
+<%- include("header.ejs") %> <%- include("nav.ejs") %>
+
+<div class="books">
+  <% books.forEach(book => { %>
+  <div class="book-card">
+    <div class="">
+      <div class="book-details">
+        <div class="book-name"><%= book.book_name %></div>
+        <div class="book-desc">
+          <%= book.book_description %>
+        </div>
+      </div>
+      <a
+        method="GET"
+        href="/delete-books/<%= book.book_id %>"
+        type="text"
+        class="delete-btn"
+      >
+        Delete
+      </a>
+    </div>
+  </div>
+  <% }) %>
+</div>
+
+<%- include("footer.ejs") %>

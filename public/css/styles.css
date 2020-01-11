@@ -1,0 +1,119 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+* {
+  margin: 0;
+  box-sizing: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+.nav-items {
+  border: 1px solid;
+  padding: 10px 20px;
+}
+.nav-items {
+  display: flex;
+}
+.nav-items .logo {
+  letter-spacing: 10px;
+  font-size: 20px;
+  margin-right: auto;
+  font-weight: bolder;
+}
+.nav-items li {
+  display: inline-block;
+  margin: 0 20px;
+  font-size: 18px;
+}
+
+.books {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.books .book-card {
+  display: flex;
+  align-items: center;
+  margin: 18px 10px;
+  width: 30%;
+  border: 1px solid;
+  padding: 15px 20px;
+}
+.book-card .book-name {
+  font-size: 20px;
+  font-weight: bolder;
+}
+.book-card .book-desc {
+  margin: 10px 0;
+}
+.book-card .book-author {
+  color: gray;
+}
+
+.book-card .book-details {
+  width: 70%;
+  margin-right: auto;
+}
+.book-price {
+  font-size: 25px;
+}
+#product-add-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#product-add-form input {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  padding: 10px 7px;
+}
+
+#product-add-form button {
+  padding: 8px 7px;
+  display: block;
+  margin: 0 auto;
+}
+.book-detailsPage {
+  margin: 100px auto;
+  width: 700px;
+  text-align: center;
+}
+.book-detailsPage .book-name {
+  font-size: 35px;
+  font-weight: bolder;
+}
+.book-detailsPage .book-desc {
+  margin: 20px 0;
+  line-height: 41px;
+}
+.book-detailsPage .book-price {
+  margin-bottom: 20px;
+}
+.book-detailsPage .book-author {
+  color: gray;
+}
+.book-detailsPage .addtocartbtn {
+  font-size: 17px;
+  border: 1px solid #000;
+  background: none;
+  font-weight: normal;
+  cursor: pointer;
+  padding: 5px;
+}
+.delete-btn {
+  display: inline-block;
+  font-size: 17px;
+  border: 1px solid #000;
+  background: none;
+  font-weight: normal;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin: 5px 0;
+}

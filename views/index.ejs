@@ -1,0 +1,22 @@
+<%- include("header.ejs") %> <%- include("nav.ejs") %>
+
+<div class="books">
+  <% books.forEach(book => { %>
+  <a class="book-card" href="/details/<%= book.book_id %>">
+    <div class="">
+      <div class="book-details">
+        <div class="book-name"><%= book.book_name %></div>
+        <div class="book-desc">
+          <%= book.book_description %>
+        </div>
+        <div class="book-author">- <%= book.book_author %></div>
+      </div>
+      <div class="book-price">
+        <%= book.book_price %> INR
+      </div>
+    </div>
+  </a>
+  <% }) %>
+</div>
+
+<%- include("footer.ejs") %>
